@@ -1,14 +1,61 @@
-<!DOCTYPE
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <Meta name="viewport">
+            content="Width=device-width,initial scale=1,0">
         <title>Libary Management System</title>
+        <link rel="Stylesheet"href="Style.css">
     </head>
     <body>
         <header>
-            <hi>Libary Management System</hi>
+            <h1>Libary Management System</h1>
         </header>
         <section>
             <h2>Add a Book</h2>
+            <form id="AddBook form">
+                <Label for="title">Book Title:</Label>
+                <input type="text"id="title"name="title"required><br><br>
+                <label for="Author">Author:</label>
+                <input type="text"id="author"name="Author"required><br><br>
+                <lable for="isbn">ISBN:</lable>
+                <input type="text"id="isbn"name="isbn"required><br><br>
+                <button type="submit">Add Book</button>
+            </form>
         </section>
+
+        <section>
+            <h2>Available Books</h2>
+            <table id="Book Table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Library Members</h2>
+            <form id="addMemberForm">
+                <label for="memberName">Member Name</label>
+                   <input type="text"id="memberName"name="memberName"required><br><br>
+                   <label for="memberID">Member ID:</label>
+                   <Input type="tect"id="memberID"name="memberID"Required><br><br>
+                    <button type="submit">Add Member</button>
+            </form>
+
+            <h3>Members List</h3>
+            <ul id="memberList">
+
+            </ul>
+        </section>
+        <script scr="script.js"></script>
     </body>
 </html>
