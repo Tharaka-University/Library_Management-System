@@ -4,13 +4,24 @@
         <meta charset="UTF-8">
         <Meta name="viewport">
             content="Width=device-width,initial scale=1,0">
-        <title>Libary Management System</title>
+        <title>Login-Libary Management System</title>
         <link rel="Stylesheet"href="Style.css">
     </head>
     <body>
-        <header>
+        <div class="login container">
+
             <h1>Libary Management System</h1>
-        </header>
+            <form id="Loginform">
+                <label for="username">username</label>
+                <input type="text"id="username"name="username"required><br<><br>
+                <label for="password">password:</label>
+                <input type="password"id="password"name="password"required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginError"class="error-message></p>"
+        </div>
+        <script src="script.js"></script>
+        </body>
         <section>
             <h2>Add a Book</h2>
             <form id="AddBook form">
